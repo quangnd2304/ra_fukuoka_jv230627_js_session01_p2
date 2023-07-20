@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các toán tử</title>
+</head>
+
+<body>
+    <script>
+        // 1. Toán tử toán học
+        let a = 10;
+        let b = 5;
+        let sum = a + b;//sum=15
+        let div = a / b;//div=2
+        let mul = a * b;//mul=50
+        let sub = a - b;//sub=5
+        let soDu = a % b;//soDu = 0;
+        a++;//a=11
+        b--;//b=4
+        let c = 15;
+        let d = --c;//d=24(Hiền, Thư)
+        //
+        console.log("Giá trị d:", d);
+        let e = c--;//d=24
+        console.log("Giá trị e:", e);
+        let value1 = 10;
+        let value2 = 10;
+        let result1 = ++value1;//result1: 12 (Thư 1, Quang 1) - 11(Hiền, Dương, Lương,Lan, Dương)
+        //B1: ++value1 --> value1: 11
+        //B2: result1 = value1 --> result1: 11
+        //result1: 11
+        let result2 = value2++;//result2: 11 (Thư 2, Hiền 1, Quang 2, Lan 1, Dương 1) - Lương (10)
+        //B1: result2 = value2 --> result2 = 10
+        //B2: value2++ --> value2 = 11
+        //result2: 10
+        // Khánh Linh: 2 kết quả như nhau - 2
+        console.log("Result1:", result1, "Result2:", result2);
+        let number1 = 10;
+        let number2 = 20;
+        // number2+=number1;//number2=30
+        //number2 = number2+number1
+        // number2-=number1;//number2 = number2-number1--> 10
+        number2 *= number1;//number2 = number2*number1
+        number2 /= number1;//number2 = number2/number1
+        number2 %= number1;//number2 = number2%number1
+
+    </script>
+</body>
+
+</html>

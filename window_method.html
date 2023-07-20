@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các phương thức window</title>
+</head>
+
+<body>
+    <script>
+        // alert("String"): Hiển thị thông báo cho người dùng
+        // Hiển thị câu thông báo: Xin chào các bạn lớp JV230627
+        alert("Xin chào các bạn lớp JV230627");
+        // confirm("String"): Xác nhận thông tin với người dùng
+        // Xác nhận thông tin về độ đẹp trai của thầy Phước
+        let result = confirm("Thầy Phước có đẹp trai không?");
+        console.log("Kết quả trả về của hàm confirm độ đẹp trai --->", result);
+        //prompt("String"): yêu cầu người dùng nhập thông tin
+        // Yêu cầu nhập tên người dùng
+        let userName = prompt("Nhập vào tên của bạn");
+        console.log("Dữ liệu nhập của người dùng --->", userName);
+        //console.log(param1,param2,...,paramN): In thông tin ra màn hình console
+        console.log("Tham số 1", "Tham số 2", "Tham số 3");
+        /*
+        Bài tập ứng dụng
+        1. Nhập vào tên của người dùng và hiển thị thông báo "Xin chào "+ tên người dùng
+        B1: Nhập vào tên của người dùng: prompt("String")
+        B2: Hiển thị thông báo: alert("String")
+        2. Xác nhận học viên có phải là học viên Rikkei Academy, in ra màn hình console kết 
+        quả xác nhận
+        B1: Xác nhận: confirm("String")
+        B2: In ra màn hình console: console.log("param1","param2")
+        */
+        //Bài 1:
+        //-B1: Nhập vào tên người dùng
+        let name = prompt("Nhập vào tên người dùng");
+        //Kết quả trả vệ mặc định là kiểu dữ liệu String
+        //-B2: In ra thông báo
+        alert("Xin chào " + name);
+        // Bài 2
+        //-B1: Xác nhận
+        let resultConfirm = confirm("Bạn có phải học viên của Rikkei Academy không?");
+        //-B2: in ra console
+        console.log("Kết quả xác nhận:", resultConfirm);
+        //Bài 3: Nhập vào tuổi của học viên, giá trị mong muốn nhận được là kiểu number
+        // convert String --> Number
+        //Cách 1:
+        // let age = +prompt("Nhập vào tuổi của bạn");
+        //Cách 2:
+        // let age = Number(prompt("Nhập vào tuổi của bạn"));
+        //Cách 3:
+        let age = parseInt(prompt("Nhập vào tuổi của bạn"));
+        //thịt bò: "10000"
+        //bánh mỳ: "1000"
+        //total: "10000"+"1000" = "100.001.000"
+        //totalNumber: 10000 + 1000 = 11000
+        console.log("Kiểu dữ liệu age là-->", typeof (age));
+    </script>
+</body>
+
+</html>
